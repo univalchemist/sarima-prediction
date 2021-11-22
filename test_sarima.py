@@ -116,7 +116,7 @@ def cal_duration(time1, time2):
 
 if __name__ == '__main__':
     # load dataset
-    df = pd.read_csv('dataset/eurusd_h1_2016_1_2021_10.csv')
+    df = pd.read_csv('dataset/eurusd_d1_2016_1_2021_10.csv')
     df= pd.DataFrame(df,columns = ['Close'])
 
     #Calculate the natural logarithm of the data so that the first difference 
@@ -126,7 +126,7 @@ if __name__ == '__main__':
     i = 1
     n_test = 7
     # all_data = df[i * n_test:( i * n_test) + 3000]
-    all_data = df[-600:]
+    all_data = df[-300:]
     data = all_data[:-n_test] # For test of prediction last predict_step steps
 
     # Check if the data is stationary or not by using adfuller function. If the result is greater

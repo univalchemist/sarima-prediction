@@ -1,1 +1,6 @@
 venv/*
+data_length/*
+hour_data_test/*
+prophet_fig/*
+sarima_fig/*
+__pycache__
