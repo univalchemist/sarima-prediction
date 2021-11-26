@@ -1,7 +1,5 @@
 import numpy as np
 import pandas as pd
-import matplotlib
-matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
 from statsmodels.tsa.statespace.sarimax import SARIMAX, SARIMAXResults
 import statsmodels.api as sm
@@ -183,6 +181,6 @@ if __name__ == '__main__':
     plt.plot(prediction, label='prediction')
     plt.title('Prediction vs Actual')
     plt.legend(loc='upper left', fontsize=8)
-    # plt.savefig('{}test.png'.format(i))
-    # plt.close()
-    plt.show()
+    plt.savefig('{}test.png'.format(i))
+    plt.close()
+    # plt.show()
