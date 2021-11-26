@@ -142,7 +142,7 @@ if __name__ == '__main__':
     time1 = datetime.datetime.now()
 
     # grid search
-    scores = grid_search(data, cfg_list, n_test) # [('[(1, 1, 2), (2, 1, 2, 70)]', 0.0019030947019740227), ('[(2, 1, 1), (2, 1, 2, 70)]', 0.001963385101989825)]
+    scores = grid_search(data, cfg_list, n_test, parallel=False) # [('[(1, 1, 2), (2, 1, 2, 70)]', 0.0019030947019740227), ('[(2, 1, 1), (2, 1, 2, 70)]', 0.001963385101989825)]
     time2 = datetime.datetime.now()
     td = time2 - time1
     print('----------grid search duration-------------')
